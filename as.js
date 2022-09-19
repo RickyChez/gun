@@ -34,7 +34,6 @@
 				}
 				var data = [], plate = attr? tag.attr(attr) : tag.html();
 				tmp = nest(plate, opt.match, opt.end);
-				if(!tmp.length){ return }
 				$.each(tmp, function(pos, match){
 					var expr = match.split(' ');
 					var path = (expr[0]).split('.');
